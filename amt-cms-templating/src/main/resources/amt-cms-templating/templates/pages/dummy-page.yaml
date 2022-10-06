@@ -1,0 +1,10 @@
+templateScript: /nexum-core-templating/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: nexum-core-templating:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: nexum-core-templating:components/dummy-component

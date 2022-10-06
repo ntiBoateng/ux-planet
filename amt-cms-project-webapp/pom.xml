@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.amt.magnolia</groupId>
+    <artifactId>amt-cms-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <artifactId>amt-cms-project-webapp</artifactId>
+  <name>amt-cms-project: webapp</name>
+  <packaging>war</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>info.magnolia.dx</groupId>
+      <artifactId>magnolia-dx-core-webapp</artifactId>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.dx</groupId>
+      <artifactId>magnolia-dx-core-webapp</artifactId>
+      <type>pom</type>
+      <exclusions>
+        <exclusion>
+          <groupId>info.magnolia.sitemesh</groupId>
+          <artifactId>magnolia-module-sitemesh</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>info.magnolia.editor</groupId>
+          <artifactId>magnolia-content-editor-widgetset</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>info.magnolia.javascript-models</groupId>
+          <artifactId>magnolia-module-javascript-models</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>info.magnolia.block</groupId>
+      <artifactId>magnolia-block-api</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.block</groupId>
+      <artifactId>magnolia-block-templating</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.editor</groupId>
+      <artifactId>stories-app</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.editor</groupId>
+      <artifactId>magnolia-content-editor</artifactId>
+      <version>2.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.editor</groupId>
+      <artifactId>magnolia-content-editor-widgetset-v2</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-link-unfurl</artifactId>
+      <version>2.1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-module-observation</artifactId>
+    </dependency>
+
+    <!-- PROJECT MODULES -->
+    <dependency>
+      <groupId>com.amt.magnolia.templating</groupId>
+      <artifactId>amt-cms-templating</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration>
+          <!-- exclude jars copied "physically" from the webapp overlay - so we only get those resolved by Maven's dependency management -->
+          <dependentWarExcludes>WEB-INF/lib/*.jar</dependentWarExcludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${javaVersion}</source>
+          <target>${javaVersion}</target>
+        </configuration>
+      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>16</source>
+                <target>16</target>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+</project>

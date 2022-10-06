@@ -21,3 +21,38 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+.idea/
+target/
+out/
+
+amt-cms-project/overlays/
+node_modules
+
+# production
+build
+
+.next/
+next-env.d.ts
+
+# env file
+.env
+
+# environment configuration files
+*.iml
+
+.settings
+.project
+.settings
+amt-cms-project/.settings
+amt-cms-project/.project
+amt-cms-project/.classpath
+amt-cms-templating/.classpath
+amt-cms-templating/.project
+amt-cms-templating/.settings
+
+.metadata
+.idea
+
+amt-cms-project/repositories/*
+amt-cms-project/magnolia/*

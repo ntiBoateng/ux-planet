@@ -1,0 +1,2 @@
+templateScript: /nexum-core-templating/templates/components/dummy-component.ftl
+renderType: freemarker
