@@ -26,7 +26,7 @@ hs_err_pid*
 target/
 out/
 
-amt-cms-project/overlays/
+amt-cms-project-webapp/overlays/
 node_modules
 
 # production
@@ -43,7 +43,6 @@ next-env.d.ts
 
 .settings
 .project
-.settings
 amt-cms-project/.settings
 amt-cms-project/.project
 amt-cms-project/.classpath
@@ -54,5 +53,5 @@ amt-cms-templating/.settings
 .metadata
 .idea
 
-amt-cms-project/repositories/*
-amt-cms-project/magnolia/*
+amt-cms-project-webapp/repositories/*
+amt-cms-project-webapp/magnolia/*

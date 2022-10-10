@@ -4,8 +4,8 @@
   <name>amt-cms-templating</name>
   <displayName>${project.name}</displayName>
   <description>${project.description}</description>
-  <class>com.amt.magnolia.templating.AmtTemplatingModule</class>
-  <versionHandler>com.amt.magnolia.templating.setup.AmtTemplatingModuleVersionHandler</versionHandler>
+  <class>com.amt.cms.templating.AmtCmsTemplatingModule</class>
+  <versionHandler>com.amt.cms.templating.setup.AmtCmsTemplatingModuleVersionHandler</versionHandler>
   <version>${project.version}</version>
 
   <!-- For more information on module descriptor configuration options -->
