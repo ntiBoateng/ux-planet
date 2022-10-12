@@ -1,10 +1,8 @@
-templateScript: /nexum-core-templating/templates/pages/dummy-page.ftl
-renderType: freemarker
+title:  Dummy Page
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
 visible: true
-dialog: nexum-core-templating:pages/dummy-page-properties
+dialog: amt-cms-templating:pages/dummy-page-properties
 areas:
   main:
-    renderType: freemarker
-    availableComponents:
-      dummy-component:
-        id: nexum-core-templating:components/dummy-component
+    type: noComponent
