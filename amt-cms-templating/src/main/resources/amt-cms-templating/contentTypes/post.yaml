@@ -1,0 +1,9 @@
+datasource:
+  workspace: posts
+  autoCreate: true
+
+model:
+  nodeType: post
+  properties:
+    - name: content
+    - name: postImage

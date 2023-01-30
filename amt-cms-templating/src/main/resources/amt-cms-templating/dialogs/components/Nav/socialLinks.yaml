@@ -1,0 +1,19 @@
+label: Social Media Links Dialog
+
+form:
+  properties:
+    twitter:
+      $type: textField
+      label: Twitter Link
+      required: true
+      description: Add a twitter address link
+    facebook:
+      $type: textField
+      label: FaceBook Link
+      required: true
+      description: Add a Facebook address link
+    instagram:
+      $type: textField
+      label: Instagram Link
+      required: true
+      description: Add a Instagram address link

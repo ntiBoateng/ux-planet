@@ -1,0 +1,4 @@
+title: Social Media Links
+dialog: amt-cms-templating:components/Nav/socialLinks
+templateScript: /amt-cms-templating/templates/components/Nav/socialLinks.ftl
+renderType: freemarker

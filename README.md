@@ -1,2 +1,2 @@
-# magnolia-capstone-backend
+# magnolia-CMS-backend
 Magnolia

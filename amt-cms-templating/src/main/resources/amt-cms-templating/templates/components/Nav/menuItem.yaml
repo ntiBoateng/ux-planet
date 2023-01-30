@@ -1,0 +1,4 @@
+title: Menu Item
+renderType: freemarker
+dialog: amt-cms-templating:components/Nav/menuItem
+templateScript: /amt-cms-templating/templates/components/Nav/menuItem.ftl

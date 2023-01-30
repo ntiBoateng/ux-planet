@@ -1,0 +1,55 @@
+datasource:
+  workspace: datas
+  autoCreate: true
+
+model:
+  nodeType: data
+  properties:
+    - name: location
+    - name: description
+      type: textField
+    - name: dataType
+      required: true
+      options:
+        - name: primaryData
+          value: primaryData
+          label: Primary Data
+        - name: secondaryData
+          value: secondaryData
+          label: Secondary Data
+        - name: extraData
+          value: extraData
+          label: Extra Data
+        - name: other
+          value: other
+          label: Other
+    - name: date
+      type: Date
+    - name: image
+      type: asset
+    - name: contacts
+      type: contactData
+      multiple: true
+    - name: addresses
+      type: addressData
+      multiple: true
+
+  subModels:
+    - name: contactData
+      properties:
+        - name: firstName
+          label: First Name
+        - name: lastName
+          label: Last Name
+        - name: phoneNumber
+          label: Phone Number
+        - name: emailAddress
+          label: Email Address
+    - name: addressData
+      properties:
+        - name: street
+          label: Street
+        - name: city
+          label: City
+        - name: country
+          label: Country

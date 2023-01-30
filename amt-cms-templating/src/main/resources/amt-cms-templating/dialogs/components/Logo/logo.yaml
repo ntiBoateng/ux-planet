@@ -1,0 +1,15 @@
+label: Logo Dialog
+
+form:
+  properties:
+    logoImage:
+      $type: damLinkField
+      label: Logo Chooser
+      required: true
+      description: Choose an image to be displayed
+    pageLink:
+      $type: pageLinkField
+      label: Choose a page
+      showOptions: true
+      textInputAllowed: true
+      converterClass: info.magnolia.ui.editor.converter.JcrNodeToPathConverter

@@ -1,0 +1,14 @@
+label: Menu Item
+
+form:
+  properties:
+    title:
+      $type: textField
+      required: true
+      label: Page Title
+      i18n: true
+      description: Add a page menu item
+    pageLink:
+      $type: pageLinkField
+      required: true
+      label: Choose a target page

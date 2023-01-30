@@ -1,0 +1,4 @@
+title: Text & Image
+dialog: nexum-explore-module:components/textImage
+templateScript: /nexum-explore-module/templates/components/textImage.ftl
+renderType: freemarker

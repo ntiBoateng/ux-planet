@@ -1,8 +1,0 @@
-label: Heading
-form:
-  properties:
-    title:
-      label: Heading Title
-      $type: textField
-      i18n: true
-

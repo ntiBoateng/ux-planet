@@ -1,0 +1,33 @@
+title: Home Page (UX Planet)
+renderType: freemarker
+dialog: amt-cms-templating:pages/home
+templateScript: /amt-cms-templating/templates/pages/home.ftl
+
+areas:
+  logoArea:
+    type: list
+    title: Logo Area
+    availableComponents:
+      teaser:
+        id: amt-cms-templating:components/Logo/teaser
+  headerArea:
+    type: list
+    title: Header Area
+    availableComponents:
+      header:
+        id: amt-cms-templating:components/Header/header
+  navArea:
+    type: list
+    title: Nav Area
+    templateScript: /amt-cms-templating/templates/components/Nav/menuItemArea.ftl
+    availableComponents:
+      menuItem:
+        id: amt-cms-templating:components/Nav/menuItem
+      socialLinks:
+        id: amt-cms-templating:components/Nav/socialLinks
+  body:
+    type: list
+    title: Body Area
+    availableComponents:
+      posts:
+        id: amt-cms-templating:components/Posts/posts

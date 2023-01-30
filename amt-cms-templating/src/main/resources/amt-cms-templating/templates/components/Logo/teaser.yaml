@@ -1,0 +1,4 @@
+title: Teaser Component
+dialog: amt-cms-templating:components/Logo/teaser
+templateScript: /amt-cms-templating/templates/components/Logo/teaser.ftl
+renderType: freemarker

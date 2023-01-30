@@ -1,0 +1,4 @@
+title: Logo with Link
+renderType: freemarker
+dialog: amt-cms-templating:components/Logo/logo
+templateScript: /amt-cms-templating/templates/components/Logo/logo.ftl

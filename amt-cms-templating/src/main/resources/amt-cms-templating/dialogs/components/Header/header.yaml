@@ -1,0 +1,21 @@
+label: Header Dialog properties
+
+form:
+  properties:
+    pageLink:
+      $type: pageLinkField
+      label: Choose Page
+      required: true
+    logo:
+      $type: damLinkField
+      required: true
+      label: Add Logo
+    title:
+      $type: textField
+      label: Title
+      required: true
+    subTitle:
+      $type: textField
+      label: Sub-Title
+      required: true
+      rows: 2

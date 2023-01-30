@@ -1,0 +1,12 @@
+title: Nav Area - Component
+renderType: freemarker
+templateScript: /amt-cms-templating/templates/components/Nav/nav.ftl
+
+
+areas:
+  menuArea:
+    title: Nav Area
+
+    availableComponents:
+      menuItem:
+        id: amt-cms-templating:components/Nav/menuItem

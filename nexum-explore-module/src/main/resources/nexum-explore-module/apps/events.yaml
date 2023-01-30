@@ -1,0 +1,10 @@
+!content-type:event
+name: events
+label: Data Builder
+enabled: true
+icon: car-svgrepo-com
+
+#subModels:
+#  detail:
+#    form:
+#      properties:

@@ -1,0 +1,12 @@
+title: Home Page - FreeMarker
+dialog: nexum-explore-module:pages/home
+renderType: freemarker
+templateScript: /nexum-explore-module/templates/pages/home.ftl
+
+areas:
+  main:
+    title: Main Area
+    type: list
+    availableComponents:
+      textImage:
+        id: nexum-explore-module:components/textImage

@@ -1,0 +1,10 @@
+!content-type:data
+name: datas
+label: Events Builder
+enabled: true
+icon: blogger-svgrepo-com
+
+#subModels:
+#  detail:
+#    form:
+#      properties:

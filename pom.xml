@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.amt.magnolia</groupId>
     <artifactId>amt-cms-project</artifactId>
@@ -8,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
-        <magnoliaBundleVersion>6.2.20</magnoliaBundleVersion>
+        <magnoliaBundleVersion>6.2.26</magnoliaBundleVersion>
         <javaVersion>17</javaVersion>
     </properties>
     <scm>
@@ -78,5 +77,6 @@
     <modules>
         <module>amt-cms-project-webapp</module>
         <module>amt-cms-templating</module>
-    </modules>
+<!--    <module>nexum-explore-module</module>-->
+  </modules>
 </project>

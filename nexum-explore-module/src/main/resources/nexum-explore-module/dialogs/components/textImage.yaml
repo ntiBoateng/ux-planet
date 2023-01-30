@@ -1,0 +1,13 @@
+label: Text & Image
+
+form:
+  properties:
+    text:
+      $type: textField
+      label: Simple Text
+      required: true
+      i18n: true
+    image:
+      $type: damLinkField
+      label: Choose Preferred Image
+      required: true

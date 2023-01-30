@@ -1,0 +1,13 @@
+label: Teaser
+
+form:
+  properties:
+
+    targetPageLink:
+      $type: pageLinkField
+      description: Choose a page to link to.
+      required: true
+    logoImage:
+      $type: damLinkField
+      required: true
+      label: Choose Logo

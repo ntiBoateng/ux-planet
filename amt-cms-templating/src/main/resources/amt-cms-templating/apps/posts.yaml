@@ -1,0 +1,44 @@
+!content-type:post
+name: posts
+label: Blog Posts
+enabled: true
+icon: blogCat-svgrepo-com
+
+
+subApps:
+  browser:
+    actions:
+      activate:
+        $type: openDialogAction
+        dialogId: workflow-pages:publish
+        catalog: workflow
+        command: activate
+
+  detail:
+    form:
+      properties:
+        name:
+          label: Blog Title
+          rows: 2
+        content:
+          $type: richTextField
+          label: Blog Post Content
+          i18n: true
+          height: 500
+          tables: true
+          source: true
+          colors: F8C100,28166F,00923E,F80060,00F898,0060F8,9800F8,1C00F8,00DCF8,BD2D2E,FF001F
+          alignment: true
+          placeholder: Add blog contents !
+          fonts: Arial/Arial,sans-serif;Times New Roman/Times New Roman,serif;Times New Roman/Times New Roman, Times, serif;Verdana;Balthazar, Blackadder ITC;apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+          fontSizes: 14/14px;16/16px;18/18px;20/20px;24/24px;36/36px;48/48px
+          images: true
+          linkFieldDefinitions:
+            website:
+              $type: pageLinkField
+            dam:
+              $type: damLinkField
+        postImage:
+          $type: damLinkField
+          label: Blog Post Image
+          required: true

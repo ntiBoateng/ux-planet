@@ -1,0 +1,15 @@
+class: info.magnolia.rest.delivery.jcr.v2.JcrDeliveryEndpointDefinition
+workspace: posts
+includeSystemProperties: true
+bypassWorkspaceAcls: true
+personalized: true
+
+references:
+  - name: assetReference
+    propertyName: postImage
+    referenceResolver:
+      class: info.magnolia.rest.reference.dam.AssetReferenceResolverDefinition
+      assetRenditions:
+        - 320x240
+        - 1600x1200
+        - nonexistent

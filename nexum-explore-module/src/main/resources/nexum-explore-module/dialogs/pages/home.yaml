@@ -1,0 +1,16 @@
+label: Home Page Properties
+
+form:
+  properties:
+    title:
+      $type: textField
+      required: true
+      label: Page Title
+      i18n: true
+      description: Add a page title to be declared within the pages available
+    abstract:
+      $type: textField
+      required: true
+      label: Page Abstract
+      i18n: true
+      rows: 2

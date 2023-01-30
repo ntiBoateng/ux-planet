@@ -1,0 +1,4 @@
+title: Header Component
+renderType: freemarker
+templateScript: /amt-cms-templating/templates/components/Header/header.ftl
+dialog: amt-cms-templating:components/Header/header

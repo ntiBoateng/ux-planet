@@ -1,0 +1,3 @@
+title: Blog Posts
+renderType: freemarker
+templateScript: /amt-cms-templating/templates/components/Posts/posts.ftl
